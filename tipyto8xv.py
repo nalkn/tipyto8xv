@@ -50,15 +50,6 @@ with open(pyfile_path, "r") as rf:
     # read and replace windows CLRF
     pyfile_program = rf.read().replace("\r\n", "\n")
 
-# old template
-#pyappvar_code = b"**TI83F*\x1a\n\x00Single file dated "
-#pyappvar_code += pyfile_timestamp.encode("utf-8")
-#pyappvar_code += b"\x00\x004\x00\r\x00#\x00\x15"
-#pyappvar_code += appvar_name.encode("utf-8")
-#pyappvar_code += b"\x00\x00\x00\x00\x00\x00\x00#\x00!\x00PYCD\x00"
-#pyappvar_code += pyfile_program.encode("utf-8")
-#pyappvar_code += b"\xf8\n"
-
 # file header (55 octets)
 header = b"**TI83F*\x1A\x0A\x00"
 timestamp = time.strftime("%a %b %d %H:%M:%S %Y")
