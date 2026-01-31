@@ -1,0 +1,12 @@
+# Python venv
+.venv/
+
+# TI files
+*.8xv
+
+# Tools for compile a Python module
+compile-module/convbin
+compile-module/tipycomp
+
+# Python scripts
+scripts/

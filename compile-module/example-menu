@@ -1,0 +1,5 @@
+#MENULABEL example
+
+#MENUTITLE move
+#MENUITEM go(<@BLUE@>num<@BLACK@>)|go()|1
+#MENUITEM stop(<@BLUE@>num<@BLACK@>)|stop()|1

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Python: 3.11.9
 # Author: Killian Nallet
-# Version: 0.1
+# Version: 0.2
 #---------------------------------------------------------------------------------
 
 
@@ -10,7 +10,6 @@
 import os
 import sys
 import time
-import string
 import struct
 
 
@@ -34,7 +33,7 @@ elif len(appvar_name) > 8:
     print("[-] Output variable name too long (limited to 8 characters).")
 
 # check name characters
-for c in string.punctuation+string.digits:
+for c in '!"#$%&\'()*+,-./:;<=>?@[\\]^`{|}~0123456789 ':
     if c in appvar_name:
         print("[-] Output variable name cannot contain punctuation or digits.")
         sys.exit()
