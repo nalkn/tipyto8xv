@@ -27,3 +27,7 @@ Send your compiled module and program to a calculator :
 ``` shell
 tilp -n ti83+ MODULE.8xv PROGRAM.8xv
 ```
+
+## Additional Photos
+
+You can take a look at the `steps` folder to see the steps to run the Python program that imports the Python module on the calculator.
